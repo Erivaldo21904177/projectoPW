@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt"></html>
+<head>
+   <title>AA Mandarim</title>
+   <link rel="shortcut icon" type="image/x-icon" href="images/China.ico">
+    <meta charset="UTF-8">
+    <meta name="author" content="Carlos Mouzinho">
+    <link href="estilos.css" type="text/css" rel="stylesheet">
+</head>
+<style>
+ .gradient {
+   display: auto;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;
+   width: 100vw;
+
+    /* Colors generated on: https://colorhunt.co/palette/179481 */
+    background: linear-gradient(60deg, #a77d48, #aac2a5, #cd8d7b, #fbc490);
+    background-size: 900% 900%;
+    animation: colors 15s ease infinite;
+ }
+
+ @keyframes colors {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+</style>
+<body class="gradient">
+
+       <!--Menu-->
+       <center><header tabindex="0"> <em>Academia Aberta de Mandarim</em></header></center> 
+       <div class="page">
+         <div id="nav-container">
+           <div class="bg"></div>
+           <div class="button" tabindex="0">
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+           </div>
+           <div id="nav-content" tabindex="0">
+            <nav>
+            <ul>
+               <li><a href="Inicio.html"><em>Inicio</em></a></li>
+               <li><a href="material.html"><em>Material informativo</em></a></li>
+               <li><a href="multimedia.html"><em>Video Aulas</em></a></li>
+               <li><a href="informações.html"><em>Informações</em></a></li>
+               <li><a href="quizz.html"><em>Contactos</em></a></li>
+               <li class="small"><a href="#0"><em>Facebook</em></a><a href="#0"><em>Instagram</em></a></li>
+            </ul>
+          </nav>
+         </div>
+        </div>
+         <!--Menu-->
+       
+    
+    <main>
+    <form method="post" action="erivaldomouzinho@gmail.com">
+        <br>
+
+        <center><fieldset>
+            <br>
+            <legend>Identificação:</legend>
+            <p>Nome: <input type="text" name="nome" placeholder="nome"></p>
+            <br>
+            <p>Idade: <input type="text" name="idade" placeholder="idade"></p>
+            <br>
+            <p>Email: <input type="text" name="email" placeholder="email"></p>
+            <br>
+        </fieldset> </center>
+        <br>
+
+         <br>
+        <fieldset>
+            <label>
+                <legend>
+                    Deseja visitar a China?
+                </legend>
+                <br>
+                <label for="sim">Sim</label>
+                <input type="radio" name="visita" id="sim" required>
+                <label for="nao">Não</label>
+                <input type="radio" name="visita" id="nao">
+
+                <br><br>
+
+                <label for="continente">Em que continente está localizada a China ?</label>
+                <input list="continentes" name="continente">
+                <datalist id="continentes">
+                <option value="África">
+                <option value="América">
+                <option value="Antártica">
+                <option value="Ásia">
+                <option value="Europa">
+                <option value="Oceânia">    
+                </datalist>
+
+               <br><br>
+
+                Qual a moeda predominante na China? 
+                <br><br>
+                <input type="radio" id="euro" name="moeda" value="euro">
+                <label for="euro">Libra</label>
+                <input type="radio" id="dolar" name="moeda" value="dolar">
+                <label for="dolar">Dólar</label>
+                <input type="radio" id="libra" name="moeda" value="libra">
+                <label for="libra">Euro</label>
+                <input type="radio" id="real" name="moeda" value="real">
+                <label for="real">Yuan</label><br><br>
+
+                <label for="expressoes">Escreva algumas impressões que teve em relação a comida chinesa</label><br><br>
+                 <textarea name="message" rows="10" cols="20"></textarea>
+                 
+                 <br><br>
+
+                 <input type="submit" value="Enviar" >
+
+
+            </label>
+        </fieldset>
+    </form> 
+    
+        <form method="post" action="mailto: erivaldomouzinho@gmail.com">
+        <br>
+        <fieldset>
+        <h4>Classifique o nosso website</h4>
+
+
+        <label for="clareza"> <b>Clareza</b></label>
+        <input type="checkbox" id="Avaliar" name="Avaliar" value="Pessimo">
+        <label for="Pessimo">Péssimo</label>
+        <input type="checkbox" id="Avaliar" name="Avaliar" value="Medio">
+        <label for="Medio">Médio</label>
+        <input type="checkbox" id="Avaliar" name="Avaliar" value="Bom">
+        <label for="Bom">Bom</label>
+        <br><br>
+
+        <label for="rigor"> <b>Rigor</b></label>
+        <input type="checkbox" id="Avaliar" name="Avaliar" value="Pessimo">
+        <label for="Pessimo">Péssimo</label>
+        <input type="checkbox" id="Avaliar" name="Avaliar" value="Medio">
+        <label for="Medio">Médio</label>
+        <input type="checkbox" id="Avaliar" name="Avaliar" value="Bom">
+        <label for="Bom">Bom</label>
+        <br><br>
+
+        <label for="Precisao"> <b>Precisão</b></label>
+        <input type="checkbox" id="Avaliar" name="Avaliar" value="Pessimo">
+        <label for="Pessimo">Péssimo</label>
+        <input type="checkbox" id="Avaliar" name="Avaliar" value="Medio">
+        <label for="Medio">Médio</label>
+        <input type="checkbox" id="Avaliar" name="Avaliar" value="Bom">
+        <label for="Bom">Bom</label>
+        <br><br>
+
+        <label for="Profundidade"> <b>Profundidade</b></label>
+        <input type="checkbox" id="Avaliar" name="Avaliar" value="Pessimo">
+        <label for="Pessimo">Péssimo</label>
+        <input type="checkbox" id="Avaliar" name="Avaliar" value="Medio">
+        <label for="Medio">Médio</label>
+        <input type="checkbox" id="Avaliar" name="Avaliar" value="Bom">
+        <label for="Bom">Bom</label>
+        <br><br>
+
+        <label for="amplitude"> <b>Amplitude</b></label>
+        <input type="checkbox" id="Avaliar" name="Avaliar" value="Pessimo">
+        <label for="Pessimo">Péssimo</label>
+        <input type="checkbox" id="Avaliar" name="Avaliar" value="Medio">
+        <label for="Medio">Médio</label>
+        <input type="checkbox" id="Avaliar" name="Avaliar" value="Bom">
+        <label for="Bom">Bom</label>
+        <br><br>
+
+        <label for="logica"> <b>Lógica</b></label>
+        <input type="checkbox" id="Avaliar" name="Avaliar" value="Pessimo">
+        <label for="Pessimo">Péssimo</label>
+        <input type="checkbox" id="Avaliar" name="Avaliar" value="Medio">
+        <label for="Medio">Médio</label>
+        <input type="checkbox" id="Avaliar" name="Avaliar" value="Bom">
+        <label for="Bom">Bom</label>
+        <br><br>
+
+        <label for="significancia"> <b>Significância</b></label>
+        <input type="checkbox" id="Avaliar" name="Avaliar" value="Pessimo">
+        <label for="Pessimo">Péssimo</label>
+        <input type="checkbox" id="Avaliar" name="Avaliar" value="Medio">
+        <label for="Medio">Médio</label>
+        <input type="checkbox" id="Avaliar" name="Avaliar" value="Bom">
+        <label for="Bom">Bom</label>
+        <br><br>
+
+        <label for="orignilidade"> <b>Originalidade</b></label>
+        <input type="checkbox" id="Avaliar" name="Avaliar" value="Pessimo">
+        <label for="Pessimo">Péssimo</label>
+        <input type="checkbox" id="Avaliar" name="Avaliar" value="Medio">
+        <label for="Medio">Médio</label>
+        <input type="checkbox" id="Avaliar" name="Avaliar" value="Bom">
+        <label for="Bom">Bom</label>
+        <br><br>
+
+        <p><b>Escreva uma opinião geral sobre o site: </b></p>
+        <textarea name="message" rows="3" cols="50">Escreve aqui...</textarea><br><br>
+        <input type="hidden" id="lab3" name="lab3" value="100">
+
+    </fieldset>
+
+    <footer>
+      <ul>
+        <li><a href="Inicio.html"><em>Inicio</em></a></li>
+        <li><a href="material.html"><em>Material informativo</em></a></li>
+        <li><a href="multimedia.html"><em>Video Aulas</em></a></li>
+        <li><a href="informações.html"><em>Informações</em></a></li>
+        <li><a href="quizz.html"><em>Contactos</em></a></li>
+        
+      </ul>
+    </footer>
+   </main>
+</body>
+</html>
